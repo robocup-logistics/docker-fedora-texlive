@@ -9,7 +9,7 @@
 #*****************************************************************************
 
 FROM fedora:28
-RUN dnf -y install \
+RUN dnf -y --nodocs install \
       file \
       grep \
       latexmk \
