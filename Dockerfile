@@ -11,8 +11,10 @@
 FROM fedora:latest
 RUN dnf -y --nodocs install \
       file \
+      git \
       grep \
       latexmk \
       make \
+      ssh \
       texlive-scheme-full \
     && dnf clean all
