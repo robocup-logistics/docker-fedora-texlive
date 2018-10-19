@@ -8,7 +8,7 @@
 #
 #*****************************************************************************
 
-FROM fedora:28
+FROM fedora:latest
 RUN dnf -y --nodocs install \
       file \
       grep \
