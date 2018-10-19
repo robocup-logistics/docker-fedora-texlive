@@ -10,6 +10,7 @@
 
 FROM fedora:28
 RUN dnf -y install \
+      file \
       grep \
       latexmk \
       make \
