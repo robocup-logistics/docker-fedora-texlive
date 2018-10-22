@@ -15,6 +15,6 @@ RUN dnf -y --nodocs install \
       grep \
       latexmk \
       make \
-      ssh \
+      openssh-clients \
       texlive-scheme-full \
     && dnf clean all
