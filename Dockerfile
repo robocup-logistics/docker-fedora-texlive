@@ -9,7 +9,7 @@
 #*****************************************************************************
 
 FROM fedora:28
-ENV TEX_VERSION=2018
+ENV TEX_VERSION=2016
 RUN dnf -y --nodocs install \
       file \
       git \
