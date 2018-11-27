@@ -8,7 +8,7 @@
 #
 #*****************************************************************************
 
-FROM fedora:latest
+FROM fedora:rawhide
 RUN dnf -y --nodocs install \
       file \
       git \
