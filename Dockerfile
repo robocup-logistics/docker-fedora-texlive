@@ -9,6 +9,7 @@
 #*****************************************************************************
 
 FROM fedora:28
+ENV TEX_VERSION=2018
 RUN dnf -y --nodocs install \
       file \
       git \
@@ -18,3 +19,9 @@ RUN dnf -y --nodocs install \
       openssh-clients \
       texlive-scheme-full \
     && dnf clean all
+# Check that we actually installed the expected version of texlive
+RUN bash -c '\
+    tv=$(tex --version | grep -o "(TeX Live [0-9]*)" | grep -o "[0-9]*"); \
+    if [ "$tv" != "$TEX_VERSION" ] ; then \
+      echo "Unexpected TeX version $tv, expected TeX version $TEX_VERSION"; exit 1; \
+    fi'
