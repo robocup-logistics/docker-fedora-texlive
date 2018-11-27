@@ -3,5 +3,11 @@
 This repository contains a full TeX Live installation with some additional
 commonly used tools.
 
-The image is based on the latest Fedora release and updated automatically on
+## Tags
+* `latest`: the latest Fedora release with its default TeX Live Version
+* `rawhide`: Fedora Rawhide with the latest TeX Live that is available in Fedora
+* `f29-texlive2018`: Fedora 29 with Tex Live 2018
+* `f28-texlive2016`: Fedora 28 with TeX Live 2016
+
+All images are updated automatically on
 [Docker Hub](https://hub.docker.com/r/morxa/fedora-texlive/).
