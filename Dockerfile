@@ -8,7 +8,7 @@
 #
 #*****************************************************************************
 
-FROM fedora:29
+FROM fedora:30
 ENV TEX_VERSION=2018
 RUN dnf -y --nodocs install \
       file \
