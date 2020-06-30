@@ -8,7 +8,7 @@
 #
 #*****************************************************************************
 
-FROM fedora:rawhide
+FROM fedora:32
 ENV TEX_VERSION=2019
 RUN dnf -y --nodocs install \
       file \
