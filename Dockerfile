@@ -8,8 +8,8 @@
 #
 #*****************************************************************************
 
-FROM fedora:32
-ENV TEX_VERSION=2019
+FROM fedora:36
+ENV TEX_VERSION=2021
 RUN dnf -y --nodocs install \
       file \
       git \
